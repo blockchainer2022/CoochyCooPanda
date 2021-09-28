@@ -2,6 +2,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import TopSection from "../../components/topSection";
 import "./home.css";
+import Footer from "../../components/footer";
 
 toast.configure();
 
@@ -15,6 +16,7 @@ const Home = ({ account, mint, totalSupply, displayPrice, loadWeb3 }) => {
         account={account}
         loadWeb3={loadWeb3}
       />
+      <Footer />
     </div>
   );
 };
