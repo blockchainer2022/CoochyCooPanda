@@ -56,15 +56,6 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
         <div className="topsection-bootom-box-wrapper">
           <div className="topsection-bootom-inner-box-wrapper">
             <div className="topb-left-wrapper">
-              {/* <h1>
-                WELCOME TO PSYCHO
-                <br /> PSYCHO TEDDY
-              </h1>
-              <p>
-                Psycho Teddy are 10,000 simp worthy NFTs of different Mermaids.
-                The perfect collection for the Mervert in you!
-              </p> */}
-
               <div className="buy-nowbtn-wrapper">
                 <button onClick={() => loadWeb3()}>
                   {/* BUY ON OPENSEA */}
@@ -76,36 +67,7 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
                 </button>
               </div>
 
-              {/* <div className="mint-radio-wrapper">
-                <div
-                  style={value !== 1 ? { border: "none" } : null}
-                  className="mint-radio-single-wrapper"
-                  onClick={() => setValue(1)}
-                >
-                  <StyledRadio checked={value === 1 ? true : false} />
-                  <p>Buy 1 Psycho Teddy</p>
-                </div>
-                <div
-                  style={value !== 2 ? { border: "none" } : null}
-                  className="mint-radio-single-wrapper"
-                  onClick={() => setValue(2)}
-                >
-                  <StyledRadio checked={value === 2 ? true : false} />
-                  <p>Buy 2 Psycho Teddies</p>
-                </div>
-              </div> */}
-
               <div className="topsection-slider-wrapper">
-                {/* <Slider
-                  value={value}
-                  min={0}
-                  step={1}
-                  max={20}
-                  onChange={handleChange}
-                  valueLabelDisplay="auto"
-                  aria-labelledby="non-linear-slider"
-                  className="slider-last"
-                /> */}
                 <PrettoSlider
                   value={value}
                   min={1}
@@ -117,13 +79,10 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
                   onChange={handleChange}
                   className="slidercustome"
                 />
-                {/* <p className="mint2startfish">
-                  Mint {value} GoosePunks ({(value * price).toFixed(2)} Ether)
-                </p> */}
               </div>
 
               <p className="slider-below-text">
-                Buy {value} Viral Goats{" "}
+                Buy {value} Pandas{" "}
                 <span className="big-font">
                   {(value * price).toFixed(4)} Ether
                 </span>
@@ -147,7 +106,7 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
                   }
                   disabled={!account ? true : false}
                 >
-                  {totalSupply === 2000 ? "All Sold" : "Buy Viral Goats"}
+                  {totalSupply === 2000 ? "All Sold" : "Buy Pandas"}
                 </Button>
                 <br />
                 <span
@@ -167,7 +126,7 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
               </div>
 
               <p>
-                Total Viral Goats Sold{" "}
+                Total Pandas Sold{" "}
                 <span className="linebreak">{totalSupply}/7777</span>
               </p>
               <br />
