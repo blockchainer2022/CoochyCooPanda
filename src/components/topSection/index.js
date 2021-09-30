@@ -72,17 +72,17 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
                   value={value}
                   min={1}
                   step={1}
-                  max={20}
+                  max={5}
                   valueLabelDisplay="auto"
                   aria-label="pretto slider"
-                  defaultValue={20}
+                  defaultValue={5}
                   onChange={handleChange}
                   className="slidercustome"
                 />
               </div>
 
               <p className="slider-below-text">
-                Buy {value} Pandas{" "}
+                Buy {value} Coochycoo Panda{" "}
                 <span className="big-font">
                   {(value * price).toFixed(4)} Ether
                 </span>
@@ -106,7 +106,7 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
                   }
                   disabled={!account ? true : false}
                 >
-                  {totalSupply === 2000 ? "All Sold" : "Buy Pandas"}
+                  {totalSupply === 2000 ? "All Sold" : "Buy Coochycoo Panda"}
                 </Button>
                 <br />
                 <span
@@ -126,7 +126,7 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
               </div>
 
               <p>
-                Total Pandas Sold{" "}
+                Total Coochycoo Panda Sold{" "}
                 <span className="linebreak">{totalSupply}/7777</span>
               </p>
               <br />
