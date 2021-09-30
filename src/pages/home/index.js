@@ -6,7 +6,14 @@ import Footer from "../../components/footer";
 
 toast.configure();
 
-const Home = ({ account, mint, totalSupply, displayPrice, loadWeb3 }) => {
+const Home = ({
+  account,
+  mint,
+  totalSupply,
+  displayPrice,
+  loadWeb3,
+  maxSupply,
+}) => {
   return (
     <div>
       <TopSection
@@ -15,6 +22,7 @@ const Home = ({ account, mint, totalSupply, displayPrice, loadWeb3 }) => {
         price={displayPrice}
         account={account}
         loadWeb3={loadWeb3}
+        maxSupply={maxSupply}
       />
       <Footer />
     </div>

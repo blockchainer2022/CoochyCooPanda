@@ -14,6 +14,7 @@ const App = () => {
   const [account, setAccount] = useState(null);
   const [contract, setContract] = useState(null);
   const [totalSupply, setTotalSupply] = useState(0);
+  const [maxSupply, setMaxSupply] = useState(0);
   const [price, setPrice] = useState(0);
   const [displayPrice, setDisplayPrice] = useState(0);
   const [lessMintAmountAlert, setLessMintAmountAlert] = useState(false);
@@ -72,7 +73,7 @@ const App = () => {
     // you are connected to main net
     // Please connect to main net
 
-    if (chainId === 1) {
+    if (chainId === 4) {
       toast(`You are connected to main net`, {
         type: "success",
         position: toast.POSITION.BOTTOM_CENTER,
@@ -84,6 +85,9 @@ const App = () => {
       setPrice(price);
       const displayPrice = window.web3.utils.fromWei(price, "ether");
       setDisplayPrice(displayPrice);
+      const MAX_SUPPlY = await contract.methods.MAX_SUPPlY().call();
+      // console.log("MAX_SUPPLY:", MAX_SUPPlY);
+      setMaxSupply(MAX_SUPPlY);
 
       //event will be fired by the smart contract when a new NFT is minted
       contract.events
@@ -127,7 +131,7 @@ const App = () => {
 
   async function mint(mintCount) {
     if (contract) {
-      if (chainId === 1) {
+      if (chainId === 4) {
         if (mintCount === 0) {
           setLessMintAmountAlert(true);
         } else {
@@ -201,6 +205,7 @@ const App = () => {
               totalSupply={totalSupply}
               displayPrice={displayPrice}
               loadWeb3={loadWeb3}
+              maxSupply={maxSupply}
             />
           )}
         />

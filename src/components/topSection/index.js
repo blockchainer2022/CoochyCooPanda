@@ -42,7 +42,14 @@ const PrettoSlider = withStyles({
   },
 })(Slider);
 
-const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
+const TopSection = ({
+  mint,
+  totalSupply,
+  price,
+  account,
+  loadWeb3,
+  maxSupply,
+}) => {
   const [value, setValue] = React.useState(1);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -127,7 +134,9 @@ const TopSection = ({ mint, totalSupply, price, account, loadWeb3 }) => {
 
               <p>
                 Total Coochycoo Panda Sold{" "}
-                <span className="linebreak">{totalSupply}/7777</span>
+                <span className="linebreak">
+                  {totalSupply}/{maxSupply}
+                </span>
               </p>
               <br />
               <br />
