@@ -1,6 +1,6 @@
 aside.svelte-rntogh {
   display: flex;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Baumans", cursive;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -9,7 +9,7 @@ aside.svelte-rntogh {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.3);  
+  background: rgba(0, 0, 0, 0.3);
 }
 
 aside {
@@ -253,7 +253,7 @@ div.svelte-q1527.svelte-q1527 {
 }
 
 *:focus {
-    outline: 0 !important;
+  outline: 0 !important;
 }
 
 element.style {

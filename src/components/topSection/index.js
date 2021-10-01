@@ -64,8 +64,7 @@ const TopSection = ({
           <div className="topsection-bootom-inner-box-wrapper">
             <div className="topb-left-wrapper">
               <div className="buy-nowbtn-wrapper">
-                <button onClick={() => loadWeb3()}>
-                  {/* BUY ON OPENSEA */}
+                <button style={{ color: "#000" }} onClick={() => loadWeb3()}>
                   {account
                     ? account.slice(0, 8) +
                       "..." +
@@ -99,6 +98,7 @@ const TopSection = ({
                 <Button
                   variant="contained"
                   color="secondary"
+                  className="muiBtn"
                   onClick={() => {
                     mint(value);
                   }}
@@ -106,8 +106,10 @@ const TopSection = ({
                     !account || totalSupply === 2000
                       ? {
                           backgroundColor: "grey",
-                          color: "white",
+                          color: "black",
                           cursor: "default",
+
+                          fontFamily: '"Baumans"," cursive"',
                         }
                       : null
                   }

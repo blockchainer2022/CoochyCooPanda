@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Baumans&display=swap");
 body {
   height: 100vh;
   background-color: #000000;
+  font-family: "Baumans", cursive;
 }

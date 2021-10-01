@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 .topsection-main-wrapper {
   width: 100%;
   min-height: 90vh;
@@ -29,7 +27,7 @@
 .links-wrapper ul li {
   opacity: 1;
   color: #450a0a;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Baumans", cursive;
   font-size: 21px;
   margin-left: 30px;
   cursor: pointer;
@@ -51,7 +49,7 @@
   margin-top: 50px;
   opacity: 1;
   color: #450a0a;
-  font-family: "Roboto", sans-serif;
+  font-family: "Baumans", cursive;
   font-weight: 300;
   font-size: 64px;
   text-align: left;
@@ -62,7 +60,7 @@
   color: #fff;
   font-size: 25px;
   text-align: left;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Baumans", cursive;
 }
 
 .topsection-bootom-inner-box-wrapper .topb-left-wrapper .buy-nowbtn-wrapper {
@@ -83,6 +81,7 @@
   outline: none;
   color: #fff;
   cursor: pointer;
+  font-family: "Baumans", cursive;
 }
 
 .topb-right-wrapper img {
@@ -107,7 +106,10 @@
   color: #fff;
   cursor: pointer;
 }
-
+.mint-buton-wrapper .MuiButton-root {
+  font-family: "Baumans", cursive;
+  text-transform: capitalize;
+}
 .mint-buton-wrapper button:hover {
   background-color: #dfe652;
   color: #fff;
@@ -116,7 +118,9 @@
 .mint-radio-wrapper {
   margin-top: 50px;
 }
-
+.mint-buton-wrapper button.muiBtn {
+  color: #000;
+}
 .mint-radio-wrapper .mint-radio-single-wrapper {
   cursor: pointer;
   width: 80%;
